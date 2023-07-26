@@ -1,0 +1,86 @@
+@startuml User
+
+left to right direction 
+
+' :User: <-- (Use)
+' "Main Admin" as Admin
+' "Use the application" as (Use)
+' (Use) <-- Admin  : Use the appliction by admin
+
+
+actor User
+'User --> loginpage
+' package EndUsers{
+'   actor Drivers
+'   actor Users
+' }
+' User_Details..User
+
+
+
+package Application{
+    usecase "Login" as [loginpage]
+
+    'General Maps
+    [loginpage]..> [Maps]
+    [Maps]..>[Enter your location]
+    [Enter your location]..>[Routes]
+    [Routes]..>(R1, R2, R3, R4)
+
+    'Landmarks
+    [loginpage]..> [Bus Schedule]
+    [Bus Schedule]..> (View)
+    
+    'Personal Profile
+    [loginpage]..> [Personal Profile]
+    [Personal Profile]..> (View)
+    
+    'Support
+    [loginpage]..> [Support]
+    [Support]..> (Raise your concern)
+    [Support]..> (Check the status of your concern)
+
+
+    }
+
+
+
+
+
+    ' (Routes Page)<--(Show Routes Button)
+    ' (Shifts Page)<--(Show Shifts Button)
+    ' (Landmarks Page)<--(Show Landmarks Button)
+    ' (LoginPage)-.->[login]<-(Users,Drivers)->.Driver/User Login)
+    ' .-.-.<|im_sep|>-.-.
+    ' |    |<---------->|
+
+
+    ' Drivers --> loginpage
+    ' Drivers --> showroutes
+    ' Drivers --> showshifts
+    ' Drivers --> showlandmarks
+    ' Drivers --> etr
+    ' Drivers --> showbuses
+
+    ' Users --> loginpage
+    ' Users --> showroutes
+    ' Users --> showshifts
+    ' Users --> showlandmarks
+    ' Users --> eta
+    ' Users --> ticketsupport
+    ' Users --> showbuses
+
+
+    User --> loginpage
+    ' Admin --> routes
+    ' Admin --> shifts
+    ' Admin --> landmarks
+    ' Admin --> analytics_report
+    ' Admin --> buses
+    ' Admin --> etr
+    ' Admin --> ticketsupport
+    ' Admin --> contactdriver
+
+
+    @enduml
+
