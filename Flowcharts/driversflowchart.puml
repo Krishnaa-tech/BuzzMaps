@@ -1,0 +1,49 @@
+@startuml Drivers
+
+left to right direction 
+
+' :User: <-- (Use)
+' "Main Admin" as Admin
+' "Use the application" as (Use)
+' (Use) <-- Admin  : Use the appliction by admin
+
+
+actor Drivers
+' package EndUsers{
+'   actor Drivers
+'   actor Users
+' }
+' User_Details..User
+
+
+
+package Application{
+  usecase "Login" as [loginpage]
+
+    'Personal Profile
+    [loginpage]..> [Personal Profile]
+    [Personal Profile]..> (View)
+
+    
+    'Bus Schedule 
+    [loginpage]..> [Bus Schedule]
+    [Bus Schedule]..> [View]
+
+    'Maps
+    [loginpage]..> [Maps]
+    [Maps]..> [Routes] 
+
+    'Dashboard
+    [loginpage]..> [Dashboard]
+    [Dashboard]..> (No of Trips, Leaves Taken)
+    
+    
+
+
+    }
+
+    Drivers --> loginpage
+
+
+    @enduml
+
