@@ -1,5 +1,5 @@
 @startuml Admin
-
+title ADMIN FLOWCHART
 left to right direction 
 
 ' :User: <-- (Use)
