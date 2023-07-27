@@ -1,0 +1,18 @@
+@startuml Support
+title Respond Support Sequence Diagram
+actor Admin
+
+participant "Login Page" as LP
+
+Admin -> LP: Clicks on "Login" button
+LP -> App: Sends user credentials
+App -> LP: Returns acknowledgement of credentials
+
+App -> Support: View support tickets
+Support -> App: Returns support tickets
+App -> Admin: View Support Tickets 
+
+Admin -> Support: Respond support tickets
+Support -> App: Returns support tickets
+
+@enduml
