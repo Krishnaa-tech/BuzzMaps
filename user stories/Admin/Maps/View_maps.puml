@@ -1,0 +1,13 @@
+@startuml Maps
+
+title View Maps Sequence Diagram
+
+actor Admin
+Admin -> LP: Clicks on "Login" button
+LP -> App: Sends user credentials
+App -> LP: Returns acknowledgement of credential
+participant "Maps" as Maps
+
+App -> Maps: View Maps
+Maps -> App: Return Maps view
+@enduml
