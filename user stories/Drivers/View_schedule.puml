@@ -1,0 +1,12 @@
+@startuml Shifts
+
+title View Shifts Sequence Diagram
+actor Drivers
+Drivers -> LP: Clicks on "Login" button
+LP -> App: Sends user credentials
+App -> LP: Returns acknowledgement of credential
+participant "Shifts" as Shifts
+
+App -> Shifts: View Shifts
+Shifts -> App: Return Shifts view
+@enduml
