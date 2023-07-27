@@ -1,0 +1,15 @@
+@startuml Support
+title View Support Sequence Diagram
+actor Users
+
+participant "Login Page" as LP
+
+Users -> LP: Clicks on "Login" button
+LP -> App: Sends user credentials
+App -> LP: Returns acknowledgement of credentials
+
+App -> Support: Raise support tickets
+
+@enduml
+
+
