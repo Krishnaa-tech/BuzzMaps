@@ -1,0 +1,12 @@
+@startuml Contact
+
+title View Contact Drivers Sequence Diagram 
+actor Admin
+Admin -> LP: Clicks on "Login" button
+LP -> App: Sends user credentials
+App -> LP: Returns acknowledgement of credential
+participant "Contact Drivers" as CD
+
+App -> CD: View Contacts
+CD -> App: Return Contacts view
+@enduml
