@@ -1,0 +1,15 @@
+@startuml Landmarks
+
+title Add LandMarks Sequence Diagram 
+actor Admin
+Admin -> LP: Clicks on "Login" button
+LP -> App: Sends user credentials
+App -> LP: Returns acknowledgement of credential
+participant "Landmarks" as Landmarks
+
+App -> Landmarks: View Landmarks
+Landmarks -> App: Return Landmarks view
+
+App -> Landmarks: Edit Landmarks
+Landmarks -> App: Return Landmarks view
+@enduml
