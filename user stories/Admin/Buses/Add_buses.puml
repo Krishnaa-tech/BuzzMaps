@@ -1,0 +1,15 @@
+@startuml Buses
+
+title Add Buses Sequence Diagram
+actor Admin
+Admin -> LP: Clicks on "Login" button
+LP -> App: Sends user credentials
+App -> LP: Returns acknowledgement of credential
+participant "Buses" as Buses
+
+App -> Buses: View Buses
+Buses -> App: Return Buses view
+
+App -> Buses: Add Designated Bus/Buses
+Buses -> App: Return Buses view
+@enduml
