@@ -1,0 +1,16 @@
+@startuml Personal
+title View Personal Profile for Users
+actor Users
+
+
+Users -> LP: Clicks on "Login" button
+LP -> App: Sends user credentials
+participant "PersonalProfile" as PP
+App -> LP: Returns acknowledgement of credentials
+alt User is an Users
+    
+    App -> PP: View Personal Profile
+    PP -> App: Returns Personal Profile
+@enduml
+
+
