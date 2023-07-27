@@ -1,0 +1,16 @@
+@startuml Shifts
+
+title Delete Shifts Sequence Diagram
+actor Admin
+Admin -> LP: Clicks on "Login" button
+LP -> App: Sends user credentials
+App -> LP: Returns acknowledgement of credential
+participant "Shifts" as Shifts
+
+App -> Shifts: View Shifts
+Shifts -> App: Return Shifts view
+
+App -> Shifts: Delete Designated Shift/Shifts
+Shifts -> App: Return Shifts view
+
+@enduml
