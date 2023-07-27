@@ -1,0 +1,15 @@
+@startuml Report
+
+actor Admin
+
+Admin -> LP: Clicks on "Login" button
+LP -> App: Sends user credentials
+participant "Analytics Report" as AR
+App -> LP: Returns acknowledgement of credentials
+alt User is an admin
+    
+    App -> AR: View analytics report
+    AR -> App: Returns analytics report
+@enduml
+
+
