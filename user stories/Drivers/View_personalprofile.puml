@@ -1,0 +1,14 @@
+@startuml Profile
+
+actor Drivers
+title View Personal Profile for Drivers
+Drivers -> LP: Clicks on "Login" button
+LP -> App: Sends user credentials
+participant "PersonalProfile" as PP
+App -> LP: Returns acknowledgement of credentials
+alt User is an Drivers
+    App -> PP: View Personal Profile
+    PP -> App: Returns Personal Profile  
+@enduml
+
+
