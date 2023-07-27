@@ -1,5 +1,5 @@
 @startuml Drivers
-
+title DRIVERS FLOWCHART
 left to right direction 
 
 ' :User: <-- (Use)
@@ -35,7 +35,7 @@ package Application{
 
     'Dashboard
     [loginpage]..> [Dashboard]
-    [Dashboard]..> (No of Trips, Leaves Taken)
+    [Dashboard]..> (No of Trips)
     
     
 
