@@ -1,0 +1,16 @@
+@startuml Routes
+
+title Edit Routes Sequence Diagram
+actor Admin
+Admin -> LP: Clicks on "Login" button
+LP -> App: Sends user credentials
+App -> LP: Returns acknowledgement of credential
+participant "Routes" as Routes
+
+App -> Routes: View Routes
+Routes -> App: Return Routes view
+
+App -> Routes: Edit Designated Route/Routes
+Routes -> App: Return Routes view
+
+@enduml
