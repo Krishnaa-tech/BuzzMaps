@@ -1,0 +1,17 @@
+@startuml trips
+
+actor Drivers
+title Dashboard --> No of Trips
+
+Drivers -> LP: Clicks on "Login" button
+LP -> App: Sends user credentials
+participant "Analytics Report" as AR
+App -> LP: Returns acknowledgement of credentials
+alt User is an Drivers
+    
+    App -> AR: View No of trips
+    AR -> App: Returns No of Trips report
+    
+@enduml
+
+
