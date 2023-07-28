@@ -2,36 +2,11 @@
 title ADMIN FLOWCHART
 left to right direction 
 
-' :User: <-- (Use)
-' "Main Admin" as Admin
-' "Use the application" as (Use)
-' (Use) <-- Admin  : Use the appliction by admin
-
-
 actor Admin
 
-' User_Details..User
-
-
-
 package Application{
-  package EndUsers{
-    actor Drivers
-    actor Users
-}
+
   usecase "Login" as [loginpage]
-
-
-  ' usecase "Routes" as showroutes
-  ' usecase "Shifts" as showshifts
-  ' usecase "Landmarks" as showlandmarks
-  ' usecase "Buses" as showbuses
-  ' usecase "ETA" as eta
-'   usecase "ETR" as etr
-'   usecase "Support" as ticketsupport
-'   usecase "Contact Driver" as contactdriver
-
-
 
   'Routes
   [loginpage]..> [routes]
@@ -81,7 +56,7 @@ package Application{
   [Users]..>[View]
   
   
-  
+  'Drivers
   [loginpage]..> [Drivers]
   [Drivers]..>[Contact Drivers]
   [Contact Drivers]..> (name, phone number, leaves taken)
@@ -89,52 +64,13 @@ package Application{
   [loginpage]..> [Support]
   [Support]..> (View)
 
-    'General Maps
-    [loginpage]..> [Maps]
-    [Maps]..>[Enter your location]
-    [Enter your location]..>[Routes]
-    [Routes]..>(R1, R2, R3, R4)
+
+  'General Maps
+  [loginpage]..> [Maps]
+  [Maps]..>[Enter your location]
+  [Enter your location]..>[Routes]
+  [Routes]..>(R1, R2, R3, R4)
 
 }
-
-
-
-
-
-  ' (Routes Page)<--(Show Routes Button)
-  ' (Shifts Page)<--(Show Shifts Button)
-  ' (Landmarks Page)<--(Show Landmarks Button)
-  ' (LoginPage)-.->[login]<-(Users,Drivers)->.Driver/User Login)
-  ' .-.-.<|im_sep|>-.-.
-  ' |    |<---------->|
-
-
-' Drivers --> loginpage
-' Drivers --> showroutes
-' Drivers --> showshifts
-' Drivers --> showlandmarks
-' Drivers --> etr
-' Drivers --> showbuses
-
-' Users --> loginpage
-' Users --> showroutes
-' Users --> showshifts
-' Users --> showlandmarks
-' Users --> eta
-' Users --> ticketsupport
-' Users --> showbuses
-
-
- Admin --> loginpage
-' Admin --> routes
-' Admin --> shifts
-' Admin --> landmarks
-' Admin --> analytics_report
-' Admin --> buses
-' Admin --> etr
-' Admin --> ticketsupport
-' Admin --> contactdriver
-
-
 @enduml
 
