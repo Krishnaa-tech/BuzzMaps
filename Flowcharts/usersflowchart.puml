@@ -2,21 +2,7 @@
 title USERS FLOWCHART
 left to right direction 
 
-' :User: <-- (Use)
-' "Main Admin" as Admin
-' "Use the application" as (Use)
-' (Use) <-- Admin  : Use the appliction by admin
-
-
 actor User
-'User --> loginpage
-' package EndUsers{
-'   actor Drivers
-'   actor Users
-' }
-' User_Details..User
-
-
 
 package Application{
     usecase "Login" as [loginpage]
@@ -43,44 +29,6 @@ package Application{
 
     }
 
-
-
-
-
-    ' (Routes Page)<--(Show Routes Button)
-    ' (Shifts Page)<--(Show Shifts Button)
-    ' (Landmarks Page)<--(Show Landmarks Button)
-    ' (LoginPage)-.->[login]<-(Users,Drivers)->.Driver/User Login)
-    ' .-.-.<|im_sep|>-.-.
-    ' |    |<---------->|
-
-
-    ' Drivers --> loginpage
-    ' Drivers --> showroutes
-    ' Drivers --> showshifts
-    ' Drivers --> showlandmarks
-    ' Drivers --> etr
-    ' Drivers --> showbuses
-
-    ' Users --> loginpage
-    ' Users --> showroutes
-    ' Users --> showshifts
-    ' Users --> showlandmarks
-    ' Users --> eta
-    ' Users --> ticketsupport
-    ' Users --> showbuses
-
-
     User --> loginpage
-    ' Admin --> routes
-    ' Admin --> shifts
-    ' Admin --> landmarks
-    ' Admin --> analytics_report
-    ' Admin --> buses
-    ' Admin --> etr
-    ' Admin --> ticketsupport
-    ' Admin --> contactdriver
-
-
     @enduml
 
