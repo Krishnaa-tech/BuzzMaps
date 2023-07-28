@@ -2,13 +2,7 @@
 title ADMIN FLOWCHART
 left to right direction 
 
-
-
 actor Admin
-
-
-
-
 
 package Application{
 
