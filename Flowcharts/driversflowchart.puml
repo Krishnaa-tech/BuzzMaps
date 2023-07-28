@@ -2,20 +2,8 @@
 title DRIVERS FLOWCHART
 left to right direction 
 
-' :User: <-- (Use)
-' "Main Admin" as Admin
-' "Use the application" as (Use)
-' (Use) <-- Admin  : Use the appliction by admin
-
 
 actor Drivers
-' package EndUsers{
-'   actor Drivers
-'   actor Users
-' }
-' User_Details..User
-
-
 
 package Application{
   usecase "Login" as [loginpage]
@@ -36,14 +24,9 @@ package Application{
     'Dashboard
     [loginpage]..> [Dashboard]
     [Dashboard]..> (No of Trips)
-    
-    
-
-
     }
 
     Drivers --> loginpage
-
 
     @enduml
 
