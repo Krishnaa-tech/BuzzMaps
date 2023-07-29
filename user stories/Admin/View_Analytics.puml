@@ -1,5 +1,5 @@
 @startuml Report
-
+title Analytical Dashboard
 actor Admin
 
 Admin -> LP: Clicks on "Login" button
