@@ -1,6 +1,6 @@
 @startuml Landmarks
 
-title Add LandMarks Sequence Diagram 
+title Edit LandMarks Sequence Diagram 
 actor Admin
 Admin -> LP: Clicks on "Login" button
 LP -> App: Sends user credentials
