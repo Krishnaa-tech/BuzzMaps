@@ -49,9 +49,3 @@ def LoginPage(request):
 def LogoutPage(request):
     logout(request)
     return redirect('login')
-
-
-
-
-https://prod.liveshare.vsengsaas.visualstudio.com/join?3E77FEF2706A06FA12B1F06EC9E991044AFA
-
