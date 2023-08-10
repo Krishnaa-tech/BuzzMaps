@@ -23,5 +23,18 @@ urlpatterns = [
     path('',views.SignupPage,name='signup'),
     path('login/',views.LoginPage,name='login'),
     path('home/',views.HomePage,name='home'),
-    path('logout/',views.LogoutPage,name='logout')
+    path('logout/',views.LogoutPage,name='logout'),
+    path('',views.HomePage,name='home'),
+    
+    path('create_user/',views.create_user,name='create_user'),
+    path('logout/',views.LogoutPage,name='logout'),
+    path('create_department/',views.create_department,name='create_department'),
+    path('create_course/',views.create_course,name='create_course'),
+    path('create_batch/',views.create_batch,name='create_batch'),
+    path('create_class/',views.create_class,name='create_class'),
+    path('create_section/',views.create_section,name='create_section'),
+    path('create_user/',views.create_user,name='create_user'),
+    # path('userdetails/<int:id>/',views.UserDetails,name='userdetails'),
+    # path('edituser/<int:id>/',views.EditUser,name='edituser'),
+    # path('deleteuser/<int:id>/',views.DeleteUser,name='deleteuser')
 ]
