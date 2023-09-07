@@ -23,7 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',home_login,name='home-login'),
     path('dashboard/',dashboard,name='dashboard'),
-    path('user_page/',user_page,name='user_page')
+    path('user_page/',user_page,name='user_page'),
     path('index/',index,name='index')
 
 ]
