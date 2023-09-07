@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% block content %}
+    <title>My Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 36px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        img {
+            max-width:150px;
+            height: 150px;
+            
+        }
+        
+        .profile-info {
+            margin-top: 20px;
+        }
+        
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Profile</h1>
+    </header>
+    <div class="container">
+        <img src="images\muskan.jpg" alt="Profile Picture">
+        <div class="profile-info">
+            <h2>User Profile</h2>
+            <!-- <p>Hello, I'm John Doe. I'm a web developer with a passion for creating awesome websites.</p> -->
+            <h3>Name: Muskan Jain </h3>
+            <h3>Class: 3MSCDS A </h3>
+            <h3>Reg No: 22122029</h3>
+            <h3>Email: muskan.jain@msds.christuniversity.in</h3>
+            <h3>Phone: (123) 456-7890</h3>
+            
+            <!-- <p><a href="https://twitter.com/johndoe" target="_blank">Twitter</a></p> -->
+        </div>
+    </div>
+
+
+{% endblock content %}
