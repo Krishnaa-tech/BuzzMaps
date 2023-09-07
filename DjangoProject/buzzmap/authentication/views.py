@@ -21,3 +21,7 @@ def support_view(request):
 
 def admin_users_create(request):
     return render(request,'main/admin_users_create.html')
+
+
+def admin_users_manage(request):
+    return render(request,'main/admin_users_manage.html')
