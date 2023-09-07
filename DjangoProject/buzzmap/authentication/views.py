@@ -12,3 +12,9 @@ def user_page(request):
 
 def index(request):
     return render(request,'auth/index.html')
+
+def support_edit(request):
+    return render(request,'main/support_edit.html')
+
+def support_view(request):
+    return render(request,'main/support_view.html')
