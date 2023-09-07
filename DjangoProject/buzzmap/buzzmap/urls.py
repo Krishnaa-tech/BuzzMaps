@@ -17,13 +17,15 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls.static import static
 from django.conf import settings
-from authentication.views import home_login, dashboard, user_page
+from authentication.views import home_login, dashboard, user_page, index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',home_login,name='home-login'),
     path('dashboard/',dashboard,name='dashboard'),
     path('user_page/',user_page,name='user_page')
+    path('index/',index,name='index')
+
 ]
 
 urlpatterns  += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
