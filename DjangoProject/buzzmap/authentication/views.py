@@ -25,3 +25,4 @@ def admin_users_create(request):
 
 def admin_users_manage(request):
     return render(request,'main/admin_users_manage.html')
+
