@@ -9,3 +9,6 @@ def dashboard(request):
 
 def user_page(request):
     return render(request,'main/user_page.html')
+
+def index(request):
+    return render(request,'auth/index.html')
