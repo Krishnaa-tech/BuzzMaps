@@ -22,13 +22,16 @@ from authentication.views import home_login, dashboard, user_page, index, suppor
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('user/', user.site.urls),
     path('',home_login,name='home-login'),
     path('dashboard/',dashboard,name='dashboard'),
     path('user_page/',user_page,name='user_page'),
     path('index/',index,name='index'),
     path('support_view/',support_view,name='support_view'),
     path('admin_users_create/',admin_users_create,name='admin_users_create'),
-    path('admin_users_manage/',admin_users_manage,name='admin_users_manage')
+    path('admin_users_manage/',admin_users_manage,name='admin_users_manage'),
+
+
 
 
     # path('support_edit/',support_edit,name='support_edit')
