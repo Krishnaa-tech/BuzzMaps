@@ -19,5 +19,5 @@ def support_edit(request):
 def support_view(request):
     return render(request,'main/support_view.html')
 
-def admin_users(request):
-    return render(request,'main/admin_users.html')
+def admin_users_create(request):
+    return render(request,'main/admin_users_create.html')
