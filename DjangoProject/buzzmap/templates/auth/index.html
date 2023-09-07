@@ -1,44 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+
 <body>
 
-    
 
-        <a href="#"><i class="bi bi-house-door"><span>Home</span></i></a>
-        <div class="dropdown">
 
-            <label class="dropdown-toggle" onclick="toggleUsersDropdown()">
-                <i class="bi bi-people"><span>Users</span></i>
-            </label>
-            <div class="dropdown-content" id="users-dropdown-content">
-                <a href="#"><i class="bi bi-eye"></i><span>View Users</span></a>
-                <a href="#"><i class="bi bi-pencil"></i><span>Manage Users</span></a>
-            </div>
+    <a href="#"><i class="bi bi-house-door"><span>Home</span></i></a>
+    <div class="dropdown">
+
+        <label class="dropdown-toggle" onclick="toggleUsersDropdown()">
+            <i class="bi bi-people"><span>Users</span></i>
+        </label>
+        <div class="dropdown-content" id="users-dropdown-content">
+            <a href="#"><i class="bi bi-eye"></i><span>View Users</span></a>
+            <a href="#"><i class="bi bi-pencil"></i><span>Manage Users</span></a>
         </div>
-        <br>
+    </div>
+    <br>
 
-        <div class="dropdown">
-            <label class="dropdown-toggle" onclick="toggleBusDriverDropdown()">
-                <i class="fa fa-table"><span>Buses and Drivers</span></i>
-            </label>
-            <div class="dropdown-content" id="bus-driver-dropdown-content">
-                <a href="#"><i class="bi bi-bus"></i><span>View Buses and Drivers</span></a>
-                <a href="#"><i class="bi bi-person"></i><span>Manage Buses and Drivers</span></a>
-            </div>
+    <div class="dropdown">
+        <label class="dropdown-toggle" onclick="toggleBusDriverDropdown()">
+            <i class="fa fa-table"><span>Buses and Drivers</span></i>
+        </label>
+        <div class="dropdown-content" id="bus-driver-dropdown-content">
+            <a href="#"><i class="bi bi-bus"></i><span>View Buses and Drivers</span></a>
+            <a href="#"><i class="bi bi-person"></i><span>Manage Buses and Drivers</span></a>
         </div>
+    </div>
 
-        <br>
+    <br>
 
-        <div class="dropdown">
-            <label class="dropdown-toggle" onclick="toggleroutesandlandmarksDropdown()">
-                <i class="fa fa-table"><span>Routes and Landmarks</span></i>
-            </label>
-            <div class="dropdown-content" id="toggle-routes-and-landmarks-Dropdown-dropdown-content">
-                <a href="#"><i class="bi bi-bus"></i><span>View Routes and Landmarks</span></a>
-                <a href="#"><i class="bi bi-person"></i><span>Manage Routes and Landmarks</span></a>
-            </div>
+    <div class="dropdown">
+        <label class="dropdown-toggle" onclick="toggleroutesandlandmarksDropdown()">
+            <i class="fa fa-table"><span>Routes and Landmarks</span></i>
+        </label>
+        <div class="dropdown-content" id="toggle-routes-and-landmarks-Dropdown-dropdown-content">
+            <a href="#"><i class="bi bi-bus"></i><span>View Routes and Landmarks</span></a>
+            <a href="#"><i class="bi bi-person"></i><span>Manage Routes and Landmarks</span></a>
         </div>
+    </div>
 
 
-        <a href="support.html"><i class="fa fa-info-circle"><span>Support</span></i></a>
+    <a href="support.html"><i class="fa fa-info-circle"><span>Support</span></i></a>
 
 
 
@@ -82,3 +85,5 @@
 
 
 </html>
+
+{% endblock content %}
