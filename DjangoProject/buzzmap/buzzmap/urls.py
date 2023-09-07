@@ -17,7 +17,8 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls.static import static
 from django.conf import settings
-from authentication.views import home_login, dashboard, user_page, index, support_edit,support_view
+from authentication.views import home_login, dashboard, user_page, index, support_view
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,11 +26,13 @@ urlpatterns = [
     path('dashboard/',dashboard,name='dashboard'),
     path('user_page/',user_page,name='user_page'),
     path('index/',index,name='index'),
-    path('support_view/',support_view,name='support_view'),
-    path('support_edit/',support_edit,name='support_edit')
+    path('support_view/',support_view,name='support_view')
+    # path('support_edit/',support_edit,name='support_edit')
     
 
 
 ]
 
 urlpatterns  += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+
