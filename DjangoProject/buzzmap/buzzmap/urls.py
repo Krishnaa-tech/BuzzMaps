@@ -31,13 +31,8 @@ urlpatterns = [
     path('admin_users_create/',admin_users_create,name='admin_users_create'),
     path('admin_users_manage/',admin_users_manage,name='admin_users_manage'),
 
-
-
-
-    # path('support_edit/',support_edit,name='support_edit')
     
-
-
+    # path('support_edit/',support_edit,name='support_edit')
 ]+ static(settings.STATIC_URL)
 
 
