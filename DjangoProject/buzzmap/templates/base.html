@@ -28,11 +28,28 @@
     <link rel="stylesheet" href="{% static 'css/base.css' %}" type="text/css">
    
    
-    <div>
+    <!-- <div>
     <img class="logo-christ" src="{% static 'images/christ-logo.png' %}" alt="Christ Logo">
     <img class="logo-buzz-maps" src="{% static 'images/buzzmaps.png' %}" alt="Buzz Maps Logo">
-    </div>
+    </div> -->
 
+    <nav class="navbar navbar-light bg-light shadow p-3 mb-5 bg-body rounded">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <a href="#" class="christ-logo">
+                    <img src="{% static 'images/christ-logo.png' %}" alt="Logo" width="250" height="90" class="christ-logo">
+                </a>
+            </div>
+    
+            <div class="d-flex">
+                <div class="col-12 m-2 fs-3 fw-bolder">
+                     <a href="#" class="buzzmaps">
+                        <img src="{% static 'images/buzzmaps.png' %}" alt="Logo" width="250" height="100" class="d-inline-block align-text-top">
+                     </a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
 </head>
 
@@ -40,6 +57,7 @@
 
     <main class="container">
         {% block content %}
+
 
 
         {% endblock %}
