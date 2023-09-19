@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<body>
+    <h1>Bus Management</h1>
+    <table id="buses">
+        <thead>
+            <tr>
+                <th>Bus ID</th>
+                <th>Bus Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Bus data will be populated here -->
+        </tbody>
+    </table>
+    <button id="createBus">Create</button>
+    <button id="editBus">Edit</button>
+    <button id="deleteBus">Delete</button>
+
+    <h1>Driver Management</h1>
+    <table id="drivers">
+        <thead>
+            <tr>
+                <th>Reg No</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Driver data will be populated here -->
+        </tbody>
+    </table>
+    <button id="createDriver">Create</button>
+    <button id="editDriver">Edit</button>
+    <button id="deleteDriver">Delete</button>
+
+    <script>
+        // JavaScript code for handling button actions and data population goes here
+    </script>
+</body>
+{% endblock content %}
