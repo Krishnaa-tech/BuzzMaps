@@ -26,3 +26,6 @@ def admin_users_create(request):
 def admin_users_manage(request):
     return render(request,'main/admin_users_manage.html')
 
+def user_profile(request):
+    return render(request,'main/user_profile.html')
+

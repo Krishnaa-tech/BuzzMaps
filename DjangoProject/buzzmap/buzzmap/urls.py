@@ -30,6 +30,8 @@ urlpatterns = [
     path('support_view/',support_view,name='support_view'),
     path('admin_users_create/',admin_users_create,name='admin_users_create'),
     path('admin_users_manage/',admin_users_manage,name='admin_users_manage'),
+    path('user_profile/',user_page,name='user_profile')
+
 
     
     # path('support_edit/',support_edit,name='support_edit')
