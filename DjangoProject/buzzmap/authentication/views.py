@@ -29,3 +29,8 @@ def admin_users_manage(request):
 def user_profile(request):
     return render(request,'main/user_profile.html')
 
+def admin_drivers_buses(request):
+    return render(request,'main/admin_drivers_buses.html')
+
+def admin_routes_landmarks(request):
+    return render(request,'main/admin_routes_landmarks.html')

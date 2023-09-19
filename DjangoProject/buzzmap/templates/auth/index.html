@@ -30,7 +30,7 @@
             <i class="fa fa-table"><span>Buses and Drivers</span></i>
         </label>
         <div class="dropdown-content" id="bus-driver-dropdown-content">
-            <a href="#"><i class="bi bi-bus"></i><span> Manage Buses and Drivers</span></a>
+            <a href="{% url 'admin_drivers_buses' %}"><i class="bi bi-bus"></i><span> Manage Buses and Drivers</span></a>
             <!-- <a href="#"><i class="bi bi-person"></i><span>Manage Buses and Drivers</span></a> -->
         </div>
     </div>
@@ -42,8 +42,7 @@
             <i class="fa fa-table"><span>Routes and Landmarks</span></i>
         </label>
         <div class="dropdown-content" id="toggle-routes-and-landmarks-Dropdown-dropdown-content">
-            <a href="#"><i class="bi bi-bus"></i><span>View Routes and Landmarks</span></a>
-            <a href="#"><i class="bi bi-person"></i><span>Manage Routes and Landmarks</span></a>
+            <a href="{% url 'admin_routes_landmarks' %}"><i class="bi bi-person"></i><span>Manage Routes and Landmarks</span></a>
         </div>
     </div>
 
