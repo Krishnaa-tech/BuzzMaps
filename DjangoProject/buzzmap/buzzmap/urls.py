@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls.static import static
 from django.conf import settings
-from authentication.views import home_login, dashboard, user_page, index, support_view, admin_users_create,admin_users_manage
+from authentication.views import home_login, dashboard, user_page, index, support_view, admin_users_create,admin_users_manage,user_profile
 
 
 urlpatterns = [
@@ -30,7 +30,7 @@ urlpatterns = [
     path('support_view/',support_view,name='support_view'),
     path('admin_users_create/',admin_users_create,name='admin_users_create'),
     path('admin_users_manage/',admin_users_manage,name='admin_users_manage'),
-    path('user_profile/',user_page,name='user_profile')
+    path('user_profile/',user_profile,name='user_profile')
 
 
     
