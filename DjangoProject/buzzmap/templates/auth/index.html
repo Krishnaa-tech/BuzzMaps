@@ -4,7 +4,6 @@
 <div>
 
 <body>
-    <a href="#"><i class="bi bi-house-door"><span>Home</span></i></a>
     <div class="dropdown">
 
         <label class="dropdown-toggle" onclick="toggleUsersDropdown()">
@@ -94,141 +93,7 @@
 </div>
 
 <style>
-    .dropdown {
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        width: calc(100% - 2 * 10px);
-    }
 
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: white;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        left: -10px;
-        /* Adjust this value to make the dropdown pop from the right */
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-
-    .left_side {
-        flex-grow: 1;
-    }
-
-    .left_side h3 {
-        color: #fff;
-        margin: 0;
-        font-size: 22px;
-        font-weight: 900;
-    }
-
-    .left_side span {
-        color: #1983d3;
-        text-align: center;
-    }
-
-    .side-nav {
-        background: #2f323a;
-        margin-top: 0;
-        padding-top: 30px;
-        position: fixed;
-        left: 0;
-        width: 250px;
-        height: 100%;
-        transition: 0.5s;
-        transition-property: left;
-
-    }
-
-    .side-nav a {
-        color: #fff;
-        display: block;
-        width: 100%;
-        line-height: 70px;
-        text-decoration: none;
-        padding-left: 80px;
-        box-sizing: border-box;
-        transition: 0.5s;
-        transition-property: background;
-    }
-
-    .side-nav a:hover {
-        background: #0a7e96;
-    }
-
-    .side-nav i {
-        padding-right: 10%;
-    }
-
-    .side-nav i span {
-        font-family: 'Roboto', sans-serif;
-        margin-left: 25px;
-    }
-
-    label #side-nav_btn {
-        z-index: 1;
-        color: #fff;
-        position: fixed;
-        cursor: pointer;
-        left: 300px;
-        font-size: 20px;
-        margin: 5px 0;
-        transition-property: color;
-    }
-
-    label #side-nav_btn:hover {
-        color: #19b3d3;
-    }
-
-    #check:checked~.side-nav {
-        left: -190px;
-    }
-
-    #check:checked~.side-nav a span {
-        display: none;
-    }
-
-    #check:checked~.side-nav a {
-        font-size: 20px;
-        margin-left: 170px;
-        width: 80px;
-    }
-
-    .banner {
-        margin-left: 250px;
-        background-image: url();
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
-        transition: 0.5s;
-    }
-
-    #check:checked~.banner {
-        margin-left: 60px;
-    }
-
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: white;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 100;
-        padding: 3px;
-    }
-
-    .dropdown-content a {
-        display: block;
-        padding: 3px;
-        text-decoration: none;
-        color: rgb(8, 8, 8);
-        z-index: 200;
-
-    }
 </style>
 
 
