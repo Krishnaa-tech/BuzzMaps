@@ -16,7 +16,7 @@ def login_view(request):
 
     return render(request, 'login.html')
 
+# Views
 @login_required
 def home(request):
-    # Add logic for the home page view here
-    return render(request, 'home.html')
+    return render(request, "auth/index.html", {})
