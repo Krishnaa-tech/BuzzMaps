@@ -3,9 +3,6 @@ from django.contrib.auth import authenticate, login
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
-# Import your models here
-from .models import User, Bus, Route
-
 def login_view(request):
     if request.method == 'POST':
         username = request.POST.get('username')
