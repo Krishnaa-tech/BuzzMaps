@@ -10,5 +10,4 @@ urlpatterns = [
     path('home/', views.home, name='home'),
     path('register/', views.register, name='register'),
     
-    # Other URL patterns for different parts of your application
 ]
