@@ -1136,3 +1136,6 @@ a.deletelink:focus, a.deletelink:hover {
 .base-svgs {
     display: none;
 }
+.navbar .ml-auto {
+    margin-left: 80;
+}

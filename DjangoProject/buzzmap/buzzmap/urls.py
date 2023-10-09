@@ -22,6 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path('',home_login,name='home-login'),
     path("",include('authentication.urls')),
+    path("",include('main.urls')),
+    # path("",include('users.urls')),
 
 
 ]+ static(settings.STATIC_URL)
