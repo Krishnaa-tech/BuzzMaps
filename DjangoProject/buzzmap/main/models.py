@@ -27,3 +27,4 @@ class Route(models.Model):
 
     def __str__(self):
         return self.route_name
+
