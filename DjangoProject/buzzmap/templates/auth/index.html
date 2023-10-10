@@ -4,47 +4,54 @@
 <div>
 
 <body>
-    <div class="dropdown">
 
-        <label class="dropdown-toggle" onclick="toggleUsersDropdown()">
-            <i class="bi bi-people"><span>Users</span></i>
-        </label>
-        <div class="dropdown-content" id="users-dropdown-content">
-            <!-- <a href="#"><i class="bi bi-eye"></i><span>Create Users</span></a> -->
-            <a href="{% url 'admin_users_create' %}">
-                <i class="bi bi-eye"></i>
-                Create Users
-              </a>
-              <a href="{% url 'admin_users_manage' %}">
-                <i class="bi bi-eye"></i>
-                Manage Users
-              </a>
-            
+    
+    <div class="side-nav">
+        <div class="dropdown">
+
+            <label class="dropdown-toggle" onclick="toggleUsersDropdown()">
+                <i class="bi bi-people"><span>Users</span></i>
+            </label>
+            <div class="dropdown-content" id="users-dropdown-content">
+                <!-- <a href="#"><i class="bi bi-eye"></i><span>Create Users</span></a> -->
+                <a href="{% url 'admin_users_create' %}">
+                    <i class="bi bi-eye"></i>
+                    Create Users
+                </a>
+                <a href="{% url 'admin_users_manage' %}">
+                    <i class="bi bi-eye"></i>
+                    Manage Users
+                </a>
+                
+            </div>
         </div>
-    </div>
-    <br>
+    
 
-    <div class="dropdown">
-        <label class="dropdown-toggle" onclick="toggleBusDriverDropdown()">
-            <i class="fa fa-table"><span>Buses and Drivers</span></i>
-        </label>
-        <div class="dropdown-content" id="bus-driver-dropdown-content">
-            <a href="{% url 'admin_drivers_buses' %}"><i class="bi bi-bus"></i><span> Manage Buses and Drivers</span></a>
-            <!-- <a href="#"><i class="bi bi-person"></i><span>Manage Buses and Drivers</span></a> -->
+        <div class="dropdown">
+            <label class="dropdown-toggle" onclick="toggleBusDriverDropdown()">
+                <i class="fa fa-table"><span>Buses and Drivers</span></i>
+            </label>
+            <div class="dropdown-content" id="bus-driver-dropdown-content">
+                <a href="{% url 'admin_drivers_buses' %}"><i class="bi bi-bus"></i><span> Manage Buses and Drivers</span></a>
+                <!-- <a href="#"><i class="bi bi-person"></i><span>Manage Buses and Drivers</span></a> -->
+            </div>
         </div>
-    </div>
 
-    <br>
+    
 
-    <div class="dropdown">
-        <label class="dropdown-toggle" onclick="toggleroutesandlandmarksDropdown()">
-            <i class="fa fa-table"><span>Routes and Landmarks</span></i>
-        </label>
-        <div class="dropdown-content" id="toggle-routes-and-landmarks-Dropdown-dropdown-content">
-            <a href="{% url 'admin_routes_landmarks' %}"><i class="bi bi-person"></i><span>Manage Routes and Landmarks</span></a>
+        <div class="dropdown">
+            <label class="dropdown-toggle" onclick="toggleroutesandlandmarksDropdown()">
+                <i class="fa fa-table"><span>Routes and Landmarks</span></i>
+            </label>
+            <div class="dropdown-content" id="toggle-routes-and-landmarks-Dropdown-dropdown-content">
+                <a href="{% url 'admin_routes_landmarks' %}"><i class="bi bi-person"></i><span>Manage Routes and Landmarks</span></a>
+            </div>
         </div>
-    </div>
 
+        <a href="{% url 'map_view_admin' %}"><i class="fa fa-info-circle"><span>Maps</span></i></a>
+        
+    </div>
+    
 
     <div class="banner"></div>
     <script>
@@ -79,6 +86,8 @@
             }
         }
     </script>
+
+    
 
 </body>
 

@@ -1,7 +1,7 @@
 from django.urls import path
 from . import views
 from django.contrib.auth import views as auth_views
-from .views import dashboard, user_page, index, support_view, support_edit, admin_users_create,admin_users_manage,admin_drivers_buses,admin_routes_landmarks
+from .views import dashboard, user_page, index, support_view, support_edit, admin_users_create,admin_users_manage,admin_drivers_buses,admin_routes_landmarks,map_view_admin
 
 
 urlpatterns = [
@@ -14,6 +14,6 @@ urlpatterns = [
     path('support_edit/',support_edit,name='support_edit'),
     path('admin_drivers_buses/',admin_drivers_buses,name='admin_drivers_buses'),
     path('admin_routes_landmarks/',admin_routes_landmarks,name='admin_routes_landmarks'),
-    path('map_view_/',admin_routes_landmarks,name='admin_routes_landmarks'),
+    path('map_view_admin/',map_view_admin,name='map_view_admin')
 
 ]

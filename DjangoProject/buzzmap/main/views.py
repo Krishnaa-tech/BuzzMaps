@@ -31,3 +31,6 @@ def admin_drivers_buses(request):
 
 def admin_routes_landmarks(request):
     return render(request,'main/admin_routes_landmarks.html')
+
+def map_view_admin(request):
+    return render(request,'main/map_view_admin.html')
