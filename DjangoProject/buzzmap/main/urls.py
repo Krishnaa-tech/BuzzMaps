@@ -13,5 +13,7 @@ urlpatterns = [
     path('admin_users_manage/',admin_users_manage,name='admin_users_manage'),
     path('support_edit/',support_edit,name='support_edit'),
     path('admin_drivers_buses/',admin_drivers_buses,name='admin_drivers_buses'),
-    path('admin_routes_landmarks/',admin_routes_landmarks,name='admin_routes_landmarks')
+    path('admin_routes_landmarks/',admin_routes_landmarks,name='admin_routes_landmarks'),
+    path('map_view_/',admin_routes_landmarks,name='admin_routes_landmarks'),
+
 ]

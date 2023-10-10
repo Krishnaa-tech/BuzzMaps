@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<body>
+    <div id="map"></div>
+
+    <script>
+        // Replace with your Mapbox access token
+        mapboxgl.accessToken = 'pk.eyJ1Ijoia3AtY2FwMTIiLCJhIjoiY2xuaDV2bzgzMTk4dTJrcmxoOXhweThiMiJ9.k28hQ8MW1BQEMqwMbEkrJQ';
+
+        // Static bus route coordinates (latitude and longitude)
+        const busRoute = [
+            [18.5556, 73.7415],  // Christ University
+            [18.5542, 73.7432],  // SBI
+            [18.5555, 73.7433], // Portofino A
+            [18.5554, 73.7434], // Portofino E
+            [18.5553, 73.7435], // Portofino I
+            [18.5552, 73.7436], // Clubview Street
+
+        ];
+
+        // Create the map
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [73.5066, 18.4124], // Lavasa, India (Starting point)
+            zoom: 14,
+        });
+
+        // Initialize the bus marker
+        const busMarker = document.createElement('div');
+        busMarker.className = 'bus-marker';
+
+        // Add bus marker to the map
+        const marker = new mapboxgl.Marker(busMarker)
+            .setLngLat(busRoute[0])
+            .addTo(map);
+
+        // Simulate bus location updates (replace with real-time data)
+        let index = 0;
+        setInterval(() => {
+            index = (index + 1) % busRoute.length;
+            const [longitude, latitude] = busRoute[index];
+            marker.setLngLat([longitude, latitude]);
+            updateLandmarkInfo(index);
+        }, 2000); // Update every 2 seconds
+
+        // Function to update landmark information
+        function updateLandmarkInfo(index) {
+            const landmarks = [
+                'Starting Point', 'Landmark 1', 'Landmark 2', 'Landmark 3',
+                'Landmark 4', 'Landmark 5', 'Landmark 6', 'Landmark 7',
+                'Landmark 8', 'Landmark 9', 'Landmark 10', 'Ending Point'
+            ];
+
+            // Display information about the current landmark
+            const currentLandmark = landmarks[index];
+            document.getElementById('landmark-info').textContent = `Current Landmark: ${currentLandmark}`;
+        }
+    </script>
+    
+    <!-- Landmark Information -->
+    <div id="landmark-info" style="position: absolute; top: 10px; left: 10px; background-color: white; padding: 5px;"></div>
+</body>
+</html>
+
+{% endblock content %}
