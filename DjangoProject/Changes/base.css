@@ -1,0 +1,433 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Main container styles */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px 10px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #f8f9fa;
+    /* Light background color */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
+}
+
+/* Christ Logo styles */
+.christ-logo {
+    max-width: 250px;
+    max-height: 90px;
+}
+
+/* BuzzMaps Logo styles */
+.buzzmaps {
+    max-width: 250px;
+    max-height: 100px;
+}
+
+/* Logo alignment */
+.d-flex.align-items-center {
+    /* Align the logo vertically in the navbar */
+    justify-content: center;
+    /* Center the content horizontally */
+}
+
+/* Center the buzzmaps logo text */
+.col-12.m-2.fs-3.fw-bolder {
+    text-align: center;
+}
+
+/* Optional: Add padding to the buzzmaps text */
+.col-12.m-2.fs-3.fw-bolder a {
+    padding: 10px;
+}
+
+
+/* Footer styles */
+footer {
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    /* Height of the footer */
+    background: #6cf;
+
+}
+
+/* Login box styles */
+.loginBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    /* Adjust for smaller screens */
+    max-width: 350px;
+    min-height: 200px;
+    background: #000000;
+    border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginBox h3 {
+    margin: 0;
+    padding: 0 0 20px;
+    color: #59238F;
+    text-align: center;
+}
+
+.loginBox input {
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #262626;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    background: transparent;
+    font-size: 16px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.loginBox input:hover {
+    color: #42F3FA;
+    border: 1px solid #42F3FA;
+    box-shadow: 0 0 5px rgba(0, 255, 0, .3), 0 0 10px rgba(0, 255, 0, .2), 0 0 15px rgba(0, 255, 0, .1), 0 2px 0 black;
+}
+
+.loginBox input:focus {
+    border-bottom: 2px solid #42F3FA;
+}
+
+.loginBox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    background: #59238F;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.loginBox a {
+    color: #262626;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+.loginBox a:hover {
+    color: #00ffff;
+}
+
+p {
+    color: #0000ff;
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .loginBox {
+        width: 90%;
+        /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .loginBox {
+        width: 100%;
+        /* Adjust for even smaller screens */
+        padding: 20px;
+        /* Increase padding for smaller screens */
+    }
+}
+
+table {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    margin: 5px;
+}
+
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    width: calc(100% - 2 * 10px);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: -10px;
+    /* Adjust this value to make the dropdown pop from the right */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.left_side {
+    flex-grow: 1;
+}
+
+.left_side h3 {
+    color: #fff;
+    margin: 0;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.left_side span {
+    color: #1983d3;
+    text-align: center;
+}
+
+.side-nav {
+    background: #f8f9fa;
+    margin-top: 0;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: left;
+
+}
+
+.side-nav a {
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 70px;
+    text-decoration: none;
+    padding-left: 80px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.side-nav a:hover {
+    background: #0a7e96;
+}
+
+.side-nav i {
+    padding-right: 10%;
+}
+
+.side-nav i span {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 25px;
+}
+
+label #side-nav_btn {
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    left: 300px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition-property: color;
+}
+
+label #side-nav_btn:hover {
+    color: #19b3d3;
+}
+
+#check:checked~.side-nav {
+    left: -190px;
+}
+
+#check:checked~.side-nav a span {
+    display: none;
+}
+
+#check:checked~.side-nav a {
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+.banner {
+    margin-left: 250px;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+#check:checked~.banner {
+    margin-left: 60px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    padding: 3px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 3px;
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    z-index: 200;
+
+}
+
+
+/* Reset default browser styles */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the app */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.route {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.route h2 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.route p {
+    color: #666;
+}
+
+.route ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.route li {
+    margin-bottom: 5px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+#map {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.bus-marker {
+    width: 30px;
+    height: 30px;
+    background-color: #007bff;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}

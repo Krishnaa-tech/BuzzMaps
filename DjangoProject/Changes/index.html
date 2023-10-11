@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="your-css-file.css"> <!-- Add your CSS file link here -->
+    <style>
+        /* Add responsive styles */
+        @media (max-width: 768px) {
+            .side-nav {
+                width: 0;
+            }
+
+            .side-nav.active {
+                width: 250px;
+            }
+
+            .menu-btn {
+                display: block;
+                cursor: pointer;
+            }
+
+            .menu-btn i::before {
+                content: '\2630'; /* Unicode character for three bars */
+            }
+        }
+    </style>
+    <title>Your Page Title</title>
+</head>
+<body>
+    <div class="menu-btn" onclick="toggleSidebar()">
+        <i></i>
+    </div>
+
+    <div class="side-nav">
+        <div class="dropdown">
+            <label class="dropdown-toggle" onclick="toggleUsersDropdown()">
+                <i class="bi bi-people"><span>Users</span></i>
+            </label>
+            <div class="dropdown-content" id="users-dropdown-content">
+                <a href="#">
+                    <i class="bi bi-eye"></i>
+                    Create Users
+                </a>
+                <a href="#">
+                    <i class="bi bi-eye"></i>
+                    Manage Users
+                </a>
+            </div>
+        </div>
+
+        <!-- Add your other sidebar content here -->
+
+        <div class="banner"></div>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.querySelector('.side-nav');
+            sidebar.classList.toggle('active');
+        }
+
+        // Add your existing JavaScript functions here
+
+        // ...
+    </script>
+</body>
+</html>
